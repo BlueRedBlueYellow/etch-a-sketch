@@ -1,5 +1,5 @@
 const content = document.querySelector("#content");
-const gridSizeButton = document.querySelector("#change-grid-size");
+const gridSizeButton = document.querySelector("#grid-size-button");
 const defaultGridSize = 16;
 
 function addHoverEffect(e) {
