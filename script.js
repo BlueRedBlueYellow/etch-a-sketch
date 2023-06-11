@@ -1,3 +1,5 @@
+const content = document.querySelector("#content");
+const gridSizeButton = document.querySelector("#change-grid-size");
 function addHoverEffect(e) {
     e.target.classList.add("hovered");
 }
@@ -18,3 +20,15 @@ function generateGrid(boardSize) {
 }
 
 generateGrid(16);
+
+gridSizeButton.addEventListener("click", function() {
+    let newBoardSize = parseInt(prompt("What size would you like the grid?"));
+    while (newBoardSize > 100) {
+        newBoardSize = prompt("Sorry, please pick a number that's 100 or below.");
+    }
+    board.remove();
+    newBoard = document.createElement("div");
+    newBoard.id = "board";
+    content.appendChild(newBoard);
+    generateGrid(newBoardSize);
+});
