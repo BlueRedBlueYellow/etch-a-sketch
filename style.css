@@ -8,6 +8,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background-color: antiquewhite;
 }
 
 #content {
@@ -17,6 +18,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+}
+
+#grid-size-button {    
+    font: italic 20px Arial, Helvetica, sans-serif;
+    border: solid 5px brown;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#grid-size-button:hover {    
+    background-color: lightgray;
 }
 
 #grid {
@@ -38,5 +51,5 @@ body {
 }
 
 .hovered {
-    background-color: lime;
+    background-color: brown;
 }
