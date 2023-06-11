@@ -35,3 +35,7 @@ body {
     margin: 2px;
     background-color: black;
 }
+
+.hovered {
+    background-color: blue;
+}
