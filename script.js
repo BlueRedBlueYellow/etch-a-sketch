@@ -1,5 +1,7 @@
 const content = document.querySelector("#content");
 const gridSizeButton = document.querySelector("#change-grid-size");
+const defaultBoardSize = 16;
+
 function addHoverEffect(e) {
     e.target.classList.add("hovered");
 }
@@ -19,7 +21,7 @@ function generateGrid(boardSize) {
     }
 }
 
-generateGrid(16);
+generateGrid(defaultBoardSize);
 
 gridSizeButton.addEventListener("click", function() {
     let newBoardSize = parseInt(prompt("What size would you like the grid?"));
