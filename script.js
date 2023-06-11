@@ -25,8 +25,8 @@ generateGrid(defaultGridSize);
 
 gridSizeButton.addEventListener("click", function() {
     let newGridSize = parseInt(prompt("What size would you like the grid?"));
-    while (newGridSize > 100) {
-        newGridSize = prompt("Sorry, please pick a number that's 100 or below.");
+    while (newGridSize > 100 || newGridSize < 1) {
+        newGridSize = prompt("Sorry, please pick a number between 1 and 100.");
     }
     grid.remove();
     newGrid = document.createElement("div");
