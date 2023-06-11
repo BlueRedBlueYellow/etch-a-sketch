@@ -33,7 +33,7 @@ body {
 
 .square {
     flex: 1 1 0;
-    margin: 2px;
+    margin: 1px;
     background-color: black;
 }
 
