@@ -19,11 +19,11 @@ body {
     align-items: center;
 }
 
-#board {
+#grid {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
 }
 
 .column {
